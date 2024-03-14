@@ -1,27 +1,22 @@
 import { _decorator } from "cc";
 import gc from "@sg/game-client-base";
-import BaseBetDetailBodyItem from "db://shared-components/game/bet-history/scripts/components/bet-detail/bet-detail-body-item";
 import { BetChoice } from "../dtf-commons";
-import { ServiceCard } from "db://shared-components/game/poker-cards/scripts/poker-card";
+import BetDetailLogItem, {
+    BetDetailLogItemType,
+    GameRoundBetDetailsLog,
+} from "db://shared-components/game/bet-history/scripts/components/bet-detail/bet-detail-log-item";
 
 const { ccclass } = _decorator;
 const { FormatUtils } = gc;
 
 @ccclass
-export default class BetDetailBodyItem extends BaseBetDetailBodyItem {
-    setData(
-        betDetailsLog: gc.BetHistory.BetDetailsLog,
-        index: number,
-        odds: gc.BetHistory.DynamicObject<number>,
-        settlementResult: gc.BetHistory.DynamicObject<boolean>,
-        result: gc.BetHistory.DynamicObject<ServiceCard>,
-        freeBet: boolean,
-        fractionalOddsFormat: boolean
-    ) {
-        const { amount, choice } = betDetailsLog;
-        const odd = odds[choice];
+export default class BetDetailBodyItem extends BetDetailLogItem {
+    setData(data: BetDetailLogItemType) {
+        const { betDetailsLog, odds, fractionalOddsFormat, settlementResult, freeBet } = data;
 
-        super.setData(betDetailsLog, index, odds, settlementResult, result, freeBet, fractionalOddsFormat);
+        const { amount, choice } = betDetailsLog as GameRoundBetDetailsLog & gc.BetHistory.DynamicObject<object>;
+        const odd = odds[choice];
+        super.setData(data);
 
         this.lblOdds.string = (fractionalOddsFormat ? FormatUtils.numberWithCommas(+odd - 1, 2) : odd).toString();
         if (settlementResult[choice]) {
