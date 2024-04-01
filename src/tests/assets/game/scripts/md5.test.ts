@@ -40,7 +40,7 @@ import { Label } from "../../../cocos-testing/cc/label";
 import { Node } from "../../../cocos-testing/cc/node";
 import { Mask } from "../../../cocos-testing/cc/mask";
 
-import { mockDeep, DeepMockProxy } from "jest-mock-extended";
+import { mockDeep } from "jest-mock-extended";
 
 describe("MD5 tests", () => {
     let md5Instance: MD5;
