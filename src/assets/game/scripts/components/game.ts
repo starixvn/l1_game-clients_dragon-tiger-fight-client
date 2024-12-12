@@ -10,7 +10,7 @@ import { siteConfigs } from "../../../scripts/site-configs";
 import { containerOptions, settings } from "../game-settings";
 import "./../../../resources/i18n";
 import { BetChoice, Choice } from "./dtf-commons";
-const { Settlements, Rounds, Translator } = gc;
+const { Settlements, Rounds, Translator, RoundHistories } = gc;
 
 const { movingNode, getPositionAtDestNode, playSpine, fadeOut, fadeIn } = AnimationUtils;
 
@@ -51,6 +51,7 @@ export default class Game extends GameComponent {
         dragon: "dragon-growl",
         tiger: "tiger-growl",
     };
+    protected enableFixHandleFinish = true;
 
     onLoad() {
         super.onLoad();
@@ -80,6 +81,19 @@ export default class Game extends GameComponent {
             } else {
                 this.openCardsWithoutAnim();
             }
+        }
+    }
+
+    @render(RoundHistories.RoundHistoryStore, (store) => store.firstJoinGameHistory)
+    async renderStaticResult(firstJoinGameHistory: gc.RoundHistories.IFirstJoinGameHistory) {
+        if (!firstJoinGameHistory) {
+            return;
+        }
+
+        const lastRound = firstJoinGameHistory.roundHistory as any;
+        if (lastRound) {
+            const animated = firstJoinGameHistory.animationHighlight;
+            animated && this.showResult(lastRound?.result, false);
         }
     }
 
