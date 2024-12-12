@@ -1138,6 +1138,8 @@
     },
     "key": "DragonTigerFight.glossary_dragon",
     "format": 1,
+    "prefix": "",
+    "suffix": "",
     "_id": ""
   },
   {
@@ -1532,7 +1534,6 @@
     "__prefab": {
       "__id__": 79
     },
-    "isBitmapCacheMode": false,
     "_id": ""
   },
   {
@@ -1874,6 +1875,8 @@
     },
     "key": "DragonTigerFight.glossary_tiger",
     "format": 1,
+    "prefix": "",
+    "suffix": "",
     "_id": ""
   },
   {
@@ -2268,7 +2271,6 @@
     "__prefab": {
       "__id__": 115
     },
-    "isBitmapCacheMode": false,
     "_id": ""
   },
   {
@@ -2607,6 +2609,8 @@
     },
     "key": "DragonTigerFight.glossary_tie",
     "format": 1,
+    "prefix": "",
+    "suffix": "",
     "_id": ""
   },
   {
@@ -2826,7 +2830,6 @@
     "__prefab": {
       "__id__": 143
     },
-    "isBitmapCacheMode": false,
     "_id": ""
   },
   {
@@ -2950,6 +2953,7 @@
     "labelContainer": null,
     "supportChoices": "dragon,tiger,tie",
     "enablePercentage": false,
+    "showSignPercentage": true,
     "_id": ""
   },
   {
@@ -3909,10 +3913,15 @@
     "__prefab": {
       "__id__": 206
     },
-    "bigRoad": {
-      "__id__": 197
+    "scoreboards": [
+      null,
+      {
+        "__id__": 197
+      }
+    ],
+    "resultPercentage": {
+      "__id__": 150
     },
-    "beadRoad": null,
     "_id": ""
   },
   {
@@ -4121,11 +4130,9 @@
     },
     "sourceInfo": null,
     "propertyPath": [
-      "beadRoad"
+      "bigRoad"
     ],
-    "target": {
-      "__id__": 3
-    },
+    "target": null,
     "targetInfo": {
       "__id__": 224
     }
@@ -4133,7 +4140,7 @@
   {
     "__type__": "cc.TargetInfo",
     "localID": [
-      "0dXJXBFZhPPrMjEBFuDWB1"
+      "89EWZa5BdKhq1J9eDGj7aN"
     ]
   },
   {
@@ -4143,9 +4150,12 @@
     },
     "sourceInfo": null,
     "propertyPath": [
-      "bigRoad"
+      "scoreboards",
+      "0"
     ],
-    "target": null,
+    "target": {
+      "__id__": 3
+    },
     "targetInfo": {
       "__id__": 226
     }
@@ -4153,7 +4163,7 @@
   {
     "__type__": "cc.TargetInfo",
     "localID": [
-      "89EWZa5BdKhq1J9eDGj7aN"
+      "0dXJXBFZhPPrMjEBFuDWB1"
     ]
   }
 ]
