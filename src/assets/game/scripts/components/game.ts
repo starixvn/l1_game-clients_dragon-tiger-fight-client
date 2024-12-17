@@ -56,7 +56,11 @@ export default class Game extends GameComponent {
     onLoad() {
         super.onLoad();
         this.initResultSpines();
-        this.cards.forEach((card) => this.originalCardPosition.push(new Vec3(card.node.position)));
+        this.cards.forEach((card) => {
+            this.originalCardPosition.push(new Vec3(card.node.position));
+            card.faceDown();
+        });
+
         this.winningResult.hideQuickly();
     }
 
