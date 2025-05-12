@@ -217,7 +217,7 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 419.58322411533425,
+    "_orthoHeight": 393,
     "_near": 0,
     "_far": 1000,
     "_color": {
@@ -1457,7 +1457,7 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 117.92,
+      "width": 122.08,
       "height": 50
     },
     "_anchorPoint": {
@@ -1507,6 +1507,29 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 2,
+    "_enableOutline": false,
+    "_outlineColor": {
+      "__type__": "cc.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 255
+    },
+    "_outlineWidth": 2,
+    "_enableShadow": false,
+    "_shadowColor": {
+      "__type__": "cc.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 255
+    },
+    "_shadowOffset": {
+      "__type__": "cc.Vec2",
+      "x": 2,
+      "y": 2
+    },
+    "_shadowBlur": 2,
     "_id": "68H/4Ck9JPu4PtWLQpBPxV"
   },
   {
@@ -1519,7 +1542,6 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "isBitmapCacheMode": true,
     "_id": "bb2QzhxV9IS5QRXBjXPD50"
   },
   {
@@ -3258,7 +3280,9 @@
     "nodeBetItems": {
       "__id__": 59
     },
+    "usingDelayPayChips": true,
     "delayAnimPayChips": 1.25,
+    "supportChoices": "",
     "_id": "5aiWz2qQxCMJAb0PpBVlqq"
   },
   {
@@ -4061,7 +4085,6 @@
     "_timeScale": 1,
     "_preCacheMode": 0,
     "_cacheMode": 0,
-    "_defaultCacheMode": 0,
     "_sockets": [],
     "_useTint": false,
     "_debugMesh": false,
@@ -4242,7 +4265,6 @@
     "_timeScale": 1,
     "_preCacheMode": 0,
     "_cacheMode": 0,
-    "_defaultCacheMode": 0,
     "_sockets": [],
     "_useTint": false,
     "_debugMesh": false,
@@ -5042,11 +5064,9 @@
     "source": null,
     "sourceInfo": null,
     "propertyPath": [
-      "beadRoad"
+      "bigRoad"
     ],
-    "target": {
-      "__id__": 261
-    },
+    "target": null,
     "targetInfo": {
       "__id__": 273
     }
@@ -5054,7 +5074,7 @@
   {
     "__type__": "cc.TargetInfo",
     "localID": [
-      "0dXJXBFZhPPrMjEBFuDWB1"
+      "89EWZa5BdKhq1J9eDGj7aN"
     ]
   },
   {
@@ -5062,9 +5082,12 @@
     "source": null,
     "sourceInfo": null,
     "propertyPath": [
-      "bigRoad"
+      "scoreboards",
+      "0"
     ],
-    "target": null,
+    "target": {
+      "__id__": 261
+    },
     "targetInfo": {
       "__id__": 275
     }
@@ -5072,7 +5095,7 @@
   {
     "__type__": "cc.TargetInfo",
     "localID": [
-      "89EWZa5BdKhq1J9eDGj7aN"
+      "7d7+oA5NFMjLu7/7EOjSd5"
     ]
   },
   {
@@ -5291,7 +5314,7 @@
     "lengthOfMd5": 28,
     "md5Tip": null,
     "maximumStringAllowed": 32,
-    "_id": "58+DAm1HNLka4aS8ARY/iE"
+    "_id": "b4VgtlEhZHsZKcO0fAFtNn"
   },
   {
     "__type__": "cc.Node",
@@ -9177,6 +9200,9 @@
     "lightProbeInfo": {
       "__id__": 573
     },
+    "postSettings": {
+      "__id__": 574
+    },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
   },
@@ -9239,6 +9265,7 @@
       "z": 0
     },
     "_distance": 0,
+    "_planeBias": 1,
     "_shadowColor": {
       "__type__": "cc.Color",
       "r": 76,
@@ -9321,5 +9348,9 @@
     "_showConvex": false,
     "_data": null,
     "_lightProbeSphereVolume": 1
+  },
+  {
+    "__type__": "cc.PostSettingsInfo",
+    "_toneMappingType": 0
   }
 ]
