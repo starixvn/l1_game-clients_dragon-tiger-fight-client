@@ -1,5 +1,5 @@
 
-spine-result.webp
+spine-result.png
 size: 2048,2048
 format: RGBA4444
 filter: Linear,Linear
@@ -467,7 +467,7 @@ longhudou_long_00038
   offset: 0, 0
   index: -1
 
-spine-result2.webp
+spine-result2.png
 size: 2048,1024
 format: RGBA4444
 filter: Linear,Linear
