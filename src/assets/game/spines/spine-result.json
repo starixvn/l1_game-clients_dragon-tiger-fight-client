@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "w+LBIU62G8MddbKQ3KYihgWbnps",
+	"hash": "8eESSWBoNEXVospD1hvPIMOP3tU",
 	"spine": "3.8.99",
 	"x": -422.17,
 	"y": -207.05,
@@ -20,12 +20,12 @@
 	{ "name": "hef", "parent": "root", "x": 2.08, "y": -131.54, "transform": "noScale" }
 ],
 "slots": [
-	{ "name": "laohu", "bone": "laohu", "attachment": "longhu_laohu00014", "blend": "additive" },
-	{ "name": "laohu2", "bone": "laohu2", "attachment": "longhu_laohu00026", "blend": "additive" },
-	{ "name": "long", "bone": "long", "attachment": "longhudou_long_00031", "blend": "additive" },
-	{ "name": "guang_34", "bone": "guang_34", "blend": "additive" },
-	{ "name": "glow3", "bone": "glow3", "blend": "additive" },
-	{ "name": "hef", "bone": "hef", "blend": "additive" }
+	{ "name": "laohu", "bone": "laohu", "attachment": "longhu_laohu00014" },
+	{ "name": "laohu2", "bone": "laohu2", "attachment": "longhu_laohu00026" },
+	{ "name": "long", "bone": "long", "attachment": "longhudou_long_00031" },
+	{ "name": "guang_34", "bone": "guang_34" },
+	{ "name": "glow3", "bone": "glow3" },
+	{ "name": "hef", "bone": "hef" }
 ],
 "skins": [
 	{
