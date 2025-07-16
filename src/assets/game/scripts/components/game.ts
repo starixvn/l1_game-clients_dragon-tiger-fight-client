@@ -47,8 +47,8 @@ export default class Game extends GameComponent {
     override namespace = settings.name;
     override containerOptions = containerOptions;
 
-    private originalCardPosition: Vec3[] = [];
-    private choiceWinningSounds = {
+    private readonly originalCardPosition: Vec3[] = [];
+    private readonly choiceWinningSounds = {
         dragon: "dragon-growl",
         tiger: "tiger-growl",
     };
