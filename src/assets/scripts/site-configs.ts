@@ -13,9 +13,9 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         localhost: "lumigame.com",
     },
     ssl: true,
-    subDomain: "l1-proxy2",
+    subDomain: "l2-proxy",
     env: "LOCAL2",
-    subGuideDomain: "l1-guide-2",
+    subGuideDomain: "l2-guide",
     SGConnectSubDomain: "connectsite",
     enableMsgpackParserAllGames: false,
     enableMsgpackParserOnNotification: false,
@@ -23,7 +23,6 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: "dragontigerfight",
         route: "dragontigerfight",
     },
-    mainObserverNamespace: "DragonTigerFight",
     tolgeeUrl: "",
 };
 
