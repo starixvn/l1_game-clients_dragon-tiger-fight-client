@@ -11,7 +11,7 @@ export const languages = {
         "bet_choice_even": "偶数",
         "bet_choice_home": "ホーム",
         "bet_choice_odd": "奇数",
-        "bet_choice_over": "オーバー",
+        "bet_choice_over": "終了",
         "betChoice_shorten": "ベット選択",
         "bet_choice_under": "アンダー",
         "bet_detail": "ベット詳細",
@@ -47,7 +47,7 @@ export const languages = {
         "hand_already_splitted": "このハンドは既にスプリットされています。",
         "hand_is_stand": "ハンド終了",
         "hand_not_active": "非アクティブハンド",
-        "hot": "激アツ",
+        "hot": "ホット",
         "invalid_bet": "無効なベットです",
         "invalid_deal_hands": "ハンド数が無効です",
         "invalid_free_spin": "無効なフリースピン",
@@ -229,11 +229,11 @@ export const languages = {
     "DragonTigerFight": {
         "bet_history_dragon": "(ドラゴン",
         "bet_history_tiger": "タイガー)",
-        "dragon_win": "ドラゴン勝利",
+        "dragon_win": "ドラゴンの勝ち",
         "game_icon_name": "ドラゴンタイガーファイト",
         "game_icon_name_ph": "ドラゴンタイガー\n勝負",
         "game_name": "ドラゴンタイガーファイト",
-        "glossary_blackDragon": "黒龍",
+        "glossary_blackDragon": "ブラックドラゴン",
         "glossary_blackTiger": "ブラックタイガー",
         "glossary_dragon": "ドラゴン",
         "glossary_redDragon": "レッドドラゴン",
@@ -243,7 +243,7 @@ export const languages = {
         "option_black": "ブラック",
         "option_red": "赤",
         "tie_win": "引き分け！",
-        "tiger_win": "タイガー勝利！"
+        "tiger_win": "タイガーの勝ち"
     }
 };
 

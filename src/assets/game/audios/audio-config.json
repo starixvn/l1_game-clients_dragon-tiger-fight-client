@@ -30,7 +30,10 @@
         "bundle": "resources",
         "path": "winning/tiger_zh_tw"
     },
-
+    "tiger_ja": {
+        "bundle": "resources",
+        "path": "winning/tiger_ja"
+    },
     "dragon_en": {
         "bundle": "resources",
         "path": "winning/dragon_en"
@@ -55,6 +58,10 @@
         "bundle": "resources",
         "path": "winning/dragon_zh_tw"
     },
+    "dragon_ja": {
+        "bundle": "resources",
+        "path": "winning/dragon_ja"
+    },
     "tie_en": {
         "bundle": "resources",
         "path": "winning/tie_en"
@@ -78,5 +85,9 @@
     "tie_zh_tw": {
         "bundle": "resources",
         "path": "winning/tie_zh_tw"
+    },
+    "tie_ja": {
+        "bundle": "resources",
+        "path": "winning/tie_ja"
     }
 }
