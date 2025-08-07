@@ -89,5 +89,17 @@
     "tie_ja": {
         "bundle": "resources",
         "path": "winning/tie_ja"
+    },
+    "tiger_es": {
+        "bundle": "resources",
+        "path": "winning/tiger_es"
+    },
+    "dragon_es": {
+        "bundle": "resources",
+        "path": "winning/dragon_es"
+    },
+    "tie_es": {
+        "bundle": "resources",
+        "path": "winning/tie_es"
     }
 }
