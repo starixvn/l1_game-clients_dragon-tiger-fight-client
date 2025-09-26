@@ -1,0 +1,3 @@
+window.crossConfig = {
+    storagePrefixKey: "KaraKrus"
+};
